@@ -26,7 +26,7 @@ einfache schnelle Variante, aber nicht sinnvoll, wenn
 **SW selbst angepasst generieren**: `npx workbox injectManifest workbox-config.js`
 * ermöglicht mehr Kontrolle über die finale SW-Datei
 * geht davon aus, das man eine existierende SW-Datei geschrieben hat und in workbox-config.js hinterlegt hat
-* wenn workbox injectManifest ausgeführt wird, schaut der Befehl nach dem Aufruf `precaching.precacheAndRoute([])` in der SW Datei
+* wenn workbox injectManifest ausgeführt wird, schaut der Befehl nach dem Aufruf `precaching.precacheAndRoute([injectionPoint])` in der SW Datei
 --> das leere Array wird automatisch ersetzt bzw. gefüllt mit einer Liste von URLs zum Precaching (URLs sind in config.js definiert), der Rest im SW wird nicht von workbox verändert
 
 **ODER** `npm build` ausführen, da `workbox <mode> workbox-config.js` nun als build befehl in package.json hinterlegt ist.
