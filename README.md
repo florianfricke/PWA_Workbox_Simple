@@ -1,7 +1,7 @@
 # Workbox Tutorial
 ## Workbox CLI
 package.json initialisieren: `npm init -y`
-`npm install workbox-cli --save-dev`
+`npm install workbox-cli --save-dev` oder `npm install workbox-cli --global` (globale Installation, dass npx entfällt)
 `npx workbox --version`
 `npx workbox --help`
 worbox konfiguration Datei erstellen: `npx workbox wizard` 
