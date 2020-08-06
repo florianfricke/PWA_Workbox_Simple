@@ -1,3 +1,14 @@
+// Den Service Worker bzw. Service Worker Datei registieren
+if ('serviceWorker' in navigator) { //unterstützt der Browser einen Service Worker
+    window.addEventListener('load', async () => {
+        await navigator.serviceWorker.register('./sw.js').then(registration => {
+            console.log('SW registered with Workbox: ', registration);
+        }).catch(registrationError => {
+            console.log('SW registration failed with Workbox: ', registrationError);
+        });
+    });
+}
+
 document.querySelector("h1").style.backgroundColor = 'lightgray';
 
 // import axios from 'axios';
