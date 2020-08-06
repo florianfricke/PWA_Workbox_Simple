@@ -29,6 +29,8 @@ einfache schnelle Variante, aber nicht sinnvoll, wenn
 * wenn workbox injectManifest ausgeführt wird, schaut der Befehl nach dem Aufruf `precaching.precacheAndRoute([])` in der SW Datei
 --> das leere Array wird automatisch ersetzt bzw. gefüllt mit einer Liste von URLs zum Precaching (URLs sind in config.js definiert), der Rest im SW wird nicht von workbox verändert
 
+**ODER** `npm build` ausführen, da `workbox <mode> workbox-config.js` nun als build befehl in package.json hinterlegt ist.
+
 ## Workbox CLI in Build Process integrieren
 * für Webpack gibt es ein workbox-webpack-plugin -> cli nicht sinnvoll
 * bei Verwendung von npm Skripten ist die CLI eine gute Wahl
