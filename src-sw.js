@@ -5,7 +5,8 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox
 if (workbox) {
     console.log(`Workbox is loaded`);
     //placeholder for workbox, array filed by links in workbox-config.js file
-    workbox.precaching.precacheAndRoute([injectionPoint]);
+    workbox.precaching.precacheAndRoute(injectionPoint);
+
 } else {
     console.log(`Workbox didn't load`);
 }
